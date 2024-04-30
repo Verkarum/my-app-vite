@@ -10,7 +10,7 @@ const Lab6 = () => {
             
             <div className="LabContent">
             <h1>Лабораторная 6</h1>
-            
+            <Users_table></Users_table>
                 
             </div>
         </div>

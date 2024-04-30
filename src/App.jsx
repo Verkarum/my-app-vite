@@ -4,13 +4,13 @@ import Footer from './components/Footer'
 import Content from './components/Content'
 
 import {ThemeProvider} from "./providers/ThemeProvider";
-
 function App() {
 
 
   return (
     <>
     <ThemeProvider>
+      
       <Header />
       <div className="main">
         <Content />
@@ -23,3 +23,4 @@ function App() {
 }
 
 export default App
+      

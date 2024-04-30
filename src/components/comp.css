@@ -20,12 +20,15 @@ my_button {
   .header{
     width: 100%;
     display: block;
+    display:"flex";
+    justify-content: center;
   }
   .footer{
-    width: 100%;
-    display: block;
+    justify-content: space-evenly;
+    width: auto;
+    display: flex;
     height: auto;
-
+    margin-left: 15px;
   }
   .lablist{
     text-align: center;
@@ -56,6 +59,7 @@ my_button {
     margin-bottom: 15px;
     padding-top: 10px;
     padding-left: 15px;
+    justify-content: center ;
   }
   .LabPage{
     align-self: center;
@@ -82,4 +86,12 @@ my_button {
   height:inherit ;
 }
 
+.MuiDataGrid-root{ 
+  color: #e15858 !important ;
+  height:inherit ;
+}
 
+.co{
+  display: flex;
+  float: right;
+}

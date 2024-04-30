@@ -2,18 +2,17 @@ import React from "react"
 import my_button from "../components/my_button"
 import { useState } from 'react'
 import '../components/comp.css'
-import Form from "../components/Form";
 
-const Lab5 = () => {
+const Lab9 = () => {
     return (
         <div className="LabPage">
             
             <div className="LabContent">
-            <h1>Лабораторная 5</h1>
-            <Form></Form>
+            <h1>Лабораторная 9</h1>
+                
                 
             </div>
         </div>
     )
 }
-export default Lab5
+export default Lab9

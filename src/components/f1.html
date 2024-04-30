@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    
+    var t=0;
+    function Butt(){
+        //console.log("Butt")
+        t+=1;
+        document.getElementById("res").innerHTML=t;
+    }
+    function Buttsub(){
+        //console.log("Buttsub")
+        t-=1;
+        document.getElementById("res").innerHTML=t;
+    }
+    function Formfunc(event){
+        let login = event.target.login.value;
+        localStorage.setItem('login', login);
+        let password = event.target.password.value;
+        localStorage.setItem('password', password);
+        if (login == 'admin' && password == 'admin'){
+            alert("Успешно");
+        }
+        else{
+            alert("Неверные данные");
+        }
+    }
+    document.addEventListener("DOMContentLoaded",()=>{
+        console.log("Я загрузился");
+        document.getElementById("LButt").addEventListener("click",Buttsub);
+        document.getElementById("signform").addEventListener("submit", event=>Formfunc(event));
+    });
+    </script>
+</head>
+<body>
+    <h1>Дорошенко Б.С.</h1>
+    <button onclick="Butt()">Больше</button>
+    <span id="res"></span>
+    <button id="LButt">Меньше</button>
+    <form name="signform" id="signform">
+        <label for="login">Введите логин:</label>
+        <input type="text" name="login" id="login" required>
+        <br>
+        <label for="password">Введите пароль:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <input type="submit" value="войти" id="formsub">
+        <input type="reset" value="сброс">
+    </form>
+    <script>
+        
+    </script>
+</body>
+</html>

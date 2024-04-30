@@ -1,0 +1,85 @@
+my_button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #ff0000a4;
+    cursor: pointer;
+    transition: border-color 0.25s;
+
+  }
+  my_button:hover {
+    border-color: #646cff;
+  }
+  my_button:focus,
+  button:focus-visible {
+    outline: 10px auto -webkit-focus-ring-color;
+  }
+  .header{
+    width: 100%;
+    display: block;
+  }
+  .footer{
+    width: 100%;
+    display: block;
+    height: auto;
+
+  }
+  .lablist{
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    height:inherit;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-left: 8px;
+    /* background-color: #d69a1788; */
+  }
+
+
+
+  .content{
+    /* background-color: #646cff88; */
+    display: inline-block;
+    align-items: center;
+    align-self: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 70%;
+    height:auto;
+    min-height: 500px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+  .LabPage{
+    align-self: center;
+    text-align: center;
+  }
+  
+ #f1{
+  height: 300px;
+  width: 100%;
+  
+ }
+ .MuiTableCell-root { 
+  color: #e15858 !important ;
+  height:inherit ;
+}
+
+
+.MuiInputBase-root { 
+  color: #e15858 !important ;
+  height:inherit ;
+}
+.MuiFormLabel-root { 
+  color: #e15858 !important ;
+  height:inherit ;
+}
+
+
